@@ -23,6 +23,7 @@ class RSACipher:
 
     def encrypt(self, message, key):
         return rsa.encrypt(message.encode('ascii'), key)
+    
 
     def decrypt(self, ciphertext, key):
         try:
